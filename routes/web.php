@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::any('getImage',['uses' => 'ArkitController@showImage']);
+Route::get('/get', 'ArkitController@showImage');

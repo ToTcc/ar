@@ -46,8 +46,13 @@ class ArkitController extends Controller
 
     public function showImage() {
 
-        $realPath = "k7wwMpJduq.jpg";
-        $path = storage_path() . $realPath;
+
+//        $realPath = "k7wwMpJduq.jpg";
+        $path = storage_path().'/app/public/k7wwMpJduq.jpg';
+
+//        dd($path);
+
+//        dd(file_exists($path));
         if(!file_exists($path)){
             //报404错误
             header("HTTP/1.1 404 Not Found");
