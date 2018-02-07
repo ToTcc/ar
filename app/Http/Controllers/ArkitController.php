@@ -44,4 +44,21 @@ class ArkitController extends Controller
         ]);
     }
 
+    public function showImage() {
+
+        $realPath = "k7wwMpJduq.jpg";
+        $path = storage_path() . $realPath;
+        if(!file_exists($path)){
+            //报404错误
+            header("HTTP/1.1 404 Not Found");
+            header("Status: 404 Not Found");
+            exit;
+        }
+        //输出图片
+        header('Content-type: image/jpg');
+        echo file_get_contents($path);
+        exit;
+
+    }
+
 }
