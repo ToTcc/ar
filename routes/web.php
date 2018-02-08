@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/get', 'ArkitController@showImage');
+Route::get('/get', 'ArkitController@getImage');
+Route::any('targetList', 'ArkitController@targetList');
+Route::any('createTarget', 'ArkitController@createTarget');

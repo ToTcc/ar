@@ -83,6 +83,12 @@
                 </div>
 
                 <div class="links">
+                    <a href= "{{ url('get') }}">123</a>
+                    <form enctype="multipart/form-data" method="post" action="{{ url('targetList') }}">
+                        {{ csrf_field() }}
+                        <input name= "file" type="file">
+                        <input type="submit" value="上传">
+                    </form>
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>

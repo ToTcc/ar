@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Arkit extends Model
 {
     //
-    protected $table = '';
+    protected $table = 'target_image';
+
+//    public $timestamps = false;
 
 }
