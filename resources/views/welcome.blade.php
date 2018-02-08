@@ -84,7 +84,7 @@
 
                 <div class="links">
                     <a href= "{{ url('get') }}">123</a>
-                    <form enctype="multipart/form-data" method="post" action="{{ url('targetList') }}">
+                    <form enctype="multipart/form-data" method="post" action="{{ url('createTarget') }}">
                         {{ csrf_field() }}
                         <input name= "file" type="file">
                         <input type="submit" value="上传">
