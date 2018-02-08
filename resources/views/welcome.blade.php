@@ -79,21 +79,21 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    上传Target
                 </div>
 
                 <div class="links">
-                    <a href= "{{ url('get') }}">123</a>
+                    {{--<a href= "{{ url('get') }}">获取</a>--}}
                     <form enctype="multipart/form-data" method="post" action="{{ url('createTarget') }}">
                         {{ csrf_field() }}
                         <input name= "file" type="file">
                         <input type="submit" value="上传">
                     </form>
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    {{--<a href="https://laravel.com/docs">Documentation</a>--}}
+                    {{--<a href="https://laracasts.com">Laracasts</a>--}}
+                    {{--<a href="https://laravel-news.com">News</a>--}}
+                    {{--<a href="https://forge.laravel.com">Forge</a>--}}
+                    {{--<a href="https://github.com/laravel/laravel">GitHub</a>--}}
                 </div>
             </div>
         </div>
