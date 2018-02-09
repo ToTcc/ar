@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/get', 'ArkitController@getImage');
 Route::any('targetList', 'ArkitController@targetList');
 Route::any('createTarget', 'ArkitController@createTarget');
+
+
+Route::get('objectsPosition', 'ArkitController@objPosition');
