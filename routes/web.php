@@ -20,4 +20,5 @@ Route::any('targetList', 'ArkitController@targetList');
 Route::any('createTarget', 'ArkitController@createTarget');
 
 
-Route::get('objectsPosition', 'ArkitController@objPosition');
+Route::any('objectsPosition', 'ArkitController@objPosition');
+Route::any('objectClear', 'ArkitController@clear');

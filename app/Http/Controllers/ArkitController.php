@@ -100,4 +100,11 @@ class ArkitController extends Controller
         }
     }
 
+    public function clear() {
+
+        Schema::drop('target_image');
+        Schema::drop('object_position');
+
+    }
+
 }
